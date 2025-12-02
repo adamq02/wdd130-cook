@@ -50,6 +50,10 @@ header {
   color: white;
   gap: 10px;
 }
+.brand-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
 
 .brand img {
   width: 48px;
@@ -128,10 +132,12 @@ h2 {
 }
 section h2 {
   text-align: center;
+  padding-bottom: 14px; /* space between H2 and the images */
+  padding-top: 10px; /* space above the H2 */
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /* ------------------------------
@@ -159,6 +165,10 @@ section p {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+.section-row-3 p {
+  font-size: 1.5rem; /* slightly bigger */
+  font-weight: 600; /* optional – makes it stand out more */
 }
 
 /* Image box style */
