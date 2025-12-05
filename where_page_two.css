@@ -1,0 +1,76 @@
+  :root{
+    --header-color: #868485;
+    --body-color: #31081f;
+    --footer-color: #6b0f1a;
+
+    --accent-graygreen: #868485;
+    --deep-red: #6b0f1a;
+    --dark-gray: #2f2f2f;
+    --bg: var(--body-color);
+    --max-width: 1100px;
+  }
+
+  body{
+    font-family: "IM Fell French Canon", Georgia, serif;
+    background: var(--body-color);   /* body color updated */
+    color: white;
+    padding: 24px;
+  }
+
+  header{
+    background: var(--header-color); /* header color updated */
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  footer{
+    background: var(--footer-color); /* footer color updated */
+    padding: 16px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  #where_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 150px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #rock_gym {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  #heise_rock {
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
+  
+  #teton_dam {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+
+  #city_of_rocks {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+
+  .where_images {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    max-width: 350px;
+    border-radius: 8px;
+  }
+
+  #page_three_header {
+    text-align: center;
+  }
+
+  .where_headings {
+    text-align: center;
+  }
