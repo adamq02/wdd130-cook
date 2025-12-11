@@ -1,0 +1,38 @@
+body {
+  background: var(--body-color);
+  color: white;
+  margin: 0;
+  font-family: "IM Fell French Canon", Georgia, serif;
+}
+header {
+  background: var(--header-color);
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+:root {
+  --header-color: #868485; /* gray-green */
+  --body-color: #31081f; /* deep burgundy */
+  --footer-color: #6b0f1a; /* dark red */
+
+  --accent-graygreen: #868485;
+  --deep-red: #6b0f1a;
+  --dark-gray: #2f2f2f;
+
+  --max-width: 1100px;
+}
+.site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+footer {
+  background: var(--footer-color);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
