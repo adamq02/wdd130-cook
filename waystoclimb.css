@@ -1,9 +1,31 @@
+
+:root {
+  --header-color: #868485; 
+  --body-color: #31081f; 
+  --footer-color: #6b0f1a; 
+
+  --accent-graygreen: #868485;
+  --deep-red: #6b0f1a;
+  --dark-gray: #2f2f2f;
+
+  --max-width: 1100px;
+}
+
+
 body {
   background: var(--body-color);
   color: white;
   margin: 0;
   font-family: "IM Fell French Canon", Georgia, serif;
 }
+
+
+.site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
   background: var(--header-color);
   padding: 16px;
@@ -12,22 +34,63 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-:root {
-  --header-color: #868485; /* gray-green */
-  --body-color: #31081f; /* deep burgundy */
-  --footer-color: #6b0f1a; /* dark red */
 
-  --accent-graygreen: #868485;
-  --deep-red: #6b0f1a;
-  --dark-gray: #2f2f2f;
 
-  --max-width: 1100px;
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
 }
-.site {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 20px;
+.brand-title {
+  font-size: 1.7rem;
+  font-weight: 800;
 }
+
+.brand img {
+  width: 48px;
+  height: 48px;
+}
+
+
+nav a {
+  margin-left: 18px;
+  color: white;
+  text-decoration: none;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lucida Sans";
+  color: white;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+section h2 {
+  text-align: center;
+  padding-bottom: 14px; 
+  padding-top: 10px; 
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 footer {
   background: var(--footer-color);
   padding: 20px;
@@ -35,4 +98,33 @@ footer {
   color: white;
   margin-top: 40px;
   text-align: center;
+}
+
+p {
+    font-family: "IM Fell French Canon";
+}
+img {
+    height: 450px;
+    width: 750px;
+    max-width: 1200px;
+}
+
+/* display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    margin: 0 auto; */
+
+.pagetwo div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    max-width: 750px;
+}
+.pagetwo img {
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
 }
